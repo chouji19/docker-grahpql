@@ -24,6 +24,8 @@ jobs:
       - name: Build the Docker image
         run: |
           docker build -t camilobu19/docker-graphql:0.0.2 .
+          docker build -t camilobu19/docker-graphql:latest .
       - name: Push the Docker image
         run: |
           docker push camilobu19/docker-graphql:0.0.2
+          docker push camilobu19/docker-graphql:latest
